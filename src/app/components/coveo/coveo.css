@@ -11,6 +11,14 @@ atomic-facet {
   atomic-results-per-page::part(active-button) {
     @apply rounded-xl bg-gray-100 border-gray-500
   }
+
+  ::part(body-wrapper){
+    @apply bg-gray-100 border-gray-500
+  }
+  ::part(header-wrapper),
+  ::part(footer-wrapper){
+    @apply bg-blue-50 border-gray-500
+  }
   
   atomic-breadbox::part(breadcrumb-button) {
     @apply rounded-3xl border-gray-500 bg-gray-100
