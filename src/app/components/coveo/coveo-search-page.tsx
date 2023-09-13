@@ -4,6 +4,7 @@ import {
   AtomicSearchLayout,
   AtomicLayoutSection,
   AtomicSearchBox,
+  AtomicSearchBoxQuerySuggestions,
 } from "@coveo/atomic-react";
 import fieldsToInclude from "./coveo-atomic-fields";
 import CoveoAtomicSectionStatus from "./coveo-atomic-section-status";
@@ -27,8 +28,10 @@ export default function CoveoAtomicSearchInterface() {
         localization={CoveoAtomicLocalization}
       >
         <AtomicSearchLayout>
-          <AtomicLayoutSection section="search">
-            <AtomicSearchBox></AtomicSearchBox>
+          <AtomicLayoutSection className="p-5" section="search">
+            <AtomicSearchBox>
+              <AtomicSearchBoxQuerySuggestions />
+            </AtomicSearchBox>
           </AtomicLayoutSection>
 
           <CoveoAtomicSectionFacets></CoveoAtomicSectionFacets>
