@@ -1,0 +1,33 @@
+atomic-facet {
+    @apply pt-5;  
+  }
+  
+  atomic-facet::part(facet), 
+  atomic-search-box::part(wrapper), 
+  atomic-sort-dropdown::part(select), 
+  atomic-pager::part(previous-button),
+  atomic-pager::part(next-button),
+  atomic-pager::part(active-page-button),
+  atomic-results-per-page::part(active-button) {
+    @apply rounded-xl bg-gray-100 border-gray-500
+  }
+  
+  atomic-breadbox::part(breadcrumb-button) {
+    @apply rounded-3xl border-gray-500 bg-gray-100
+  }
+  
+  atomic-facet::part(value-checkbox-checked) {
+    @apply bg-blue-500;
+  }
+  
+  atomic-search-box::part(suggestions-wrapper) {
+    @apply bg-gray-100 rounded-xl;
+  }
+  
+  atomic-result-list::part(outline){
+    @apply bg-blue-50 pt-5 mt-5 rounded-lg;
+  }
+  
+  atomic-result-list::part(outline)::before{
+    @apply m-0;
+  }
